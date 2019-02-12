@@ -14,4 +14,8 @@ console.log(cadena_text);
 var numero_falso = "40";
 
 console.log(numero_falso+7);
-console.log(Number(numero_falso)+7);
+console.log(Number(numero_falso)+7);//String es otro metodo
+
+console.log(typeof(numero_entero));
+console.log(typeof(numero_falso));
+console.log(typeof(voleano));
