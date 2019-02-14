@@ -11,7 +11,7 @@
 do{
     var numero_1 = prompt("Ingrese el nuemro 1", 0);
     var numero_2 = prompt("Ingrese el nuemro 2", 0);
-} while (typeof (numero_1) != "string" || typeof (numero_2) != "string" || numero_1 > 0 || numero_2 > 0)
+} while (isNaN(numero_1) == true || isNaN(numero_2) == true || Number(numero_1) <= 0 || Number(numero_2) <= 0)
 if (numero_1 > numero_2) {
     console.log("El numero " + numero_1 + " Es mayor, que el nuemro " + numero_2);
 } else if (numero_1 < numero_2) {
