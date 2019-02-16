@@ -14,9 +14,15 @@ function sumame(numero1, numero2, resultado_2, resultado_4){
       return suma;
 }
 
-console.log(sumame(10, 11, function(dato){
+/*console.log(sumame(10, 11, function(dato){
   console.log("el resultado por 2 es "+(dato*2));
 },
 function(dato){
   console.log("el resultado por 4 es "+(dato*4));
+}));*/
+console.log(sumame(10,12, dato => {
+  console.log("El resultado por 2 " + (dato*2));
+},
+dato =>{
+  console.log("El resultado por 4 " + (dato*4));
 }));
