@@ -11,6 +11,7 @@
     2. boton de enviar el formulario: evento submit
     3. mostrar los datos por pantalla
     4. tener un boton que al darle click nos muestra los datos actuales del formulario
+    5. Validacion
     -->
     <h1>Ejercicios DON, EVENTOS, FUNCIOSNES... curso js</h1>
     <form id="formulario" action="#" method="post" onsubmit="return false;">
