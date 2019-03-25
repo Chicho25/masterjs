@@ -6,16 +6,16 @@ window.addEventListener('load', ()=>{
 // addEventListener, insertamos eventos al archivo js
 var boton = document.querySelector("button");
 // evento click
-boton.addEventListener('click', ()=>{
-  cambiar_color();
+boton.addEventListener('click', (this)=>{
+  cambiar_color(this);
 });
 
-function cambiar_color(){
+function cambiar_color(this){
 
-  if (boton.style.background == "green") {
-    boton.style.background = "red";
+  if (this.style.background == "green") {
+    this.style.background = "red";
   }else{
-  boton.style.background = "green";
+  this.style.background = "green";
   }
 }
 
