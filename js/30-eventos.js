@@ -4,19 +4,17 @@ window.addEventListener('load', ()=>{
 
 // eventos del raton
 // addEventListener, insertamos eventos al archivo js
-var boton = document.querySelector("button");
+var boton = document.querySelector("#button");
 // evento click
-boton.addEventListener('click', (this)=>{
-  cambiar_color(this);
+boton.addEventListener('click', ()=>{
+  cambiar_color();
+  console.log(this);
+  boton.style.background = "green";
 });
 
-function cambiar_color(this){
+function cambiar_color(){
 
-  if (this.style.background == "green") {
-    this.style.background = "red";
-  }else{
-  this.style.background = "green";
-  }
+
 }
 
 // mouse hover
